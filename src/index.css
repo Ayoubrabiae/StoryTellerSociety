@@ -650,11 +650,12 @@ svg:not(:host).svg-inline--fa {
   text-align: center;
 }
 
-.account-page .user-image {
-  border-radius: 50%;
-  background-color: var(--main-color);
+.account-page .user-icon {
   margin-bottom: 10px;
   width: 100px;
+  height: 100px;
+  color: var(--main-color);
+  padding: 10px 10px 0;
 }
 
 .account-page .container>.title {

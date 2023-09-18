@@ -4,6 +4,7 @@ import { signOut } from "firebase/auth"
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 export default function AccountPage({ cart, setCart }) {
   const [theUser, setTheuser] = useState(null)
@@ -50,7 +51,7 @@ export default function AccountPage({ cart, setCart }) {
     return (
       <section className="account-page full-height">
         <div className="container">
-          <img className="user-image" src="assets/user.png" alt="User image" />
+          <FontAwesomeIcon className="user-icon" icon={faUser} />
           <h2 className="title">{theUser?.displayName ? theUser.displayName : theUser?.email}</h2>
           <button className="sign-out" onClick={() => signOut(auth)}>Sign out</button>
         </div>

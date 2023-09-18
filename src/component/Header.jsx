@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom"
 import { useEffect, useState } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 export default function Header() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
@@ -42,10 +44,7 @@ export default function Header() {
           <NavLink to="books">Books</NavLink>
           <NavLink to="contact">Contact</NavLink>
           <NavLink to="account" className="sign-up">
-            <img
-              src="/src/assets/user.png"
-              alt="user Image"
-            />
+            <FontAwesomeIcon className="user-icon" icon={faUser} />
           </NavLink>
         </nav>
       </div>
