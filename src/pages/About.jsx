@@ -6,7 +6,7 @@ export default function About() {
       <div className="header">
         <div className="container">
           <h2>#About Us</h2>
-          <p>We can {"don't"} Know you but you are should be know who we are</p>
+          <p>A story should have a beginning, a middle and an end, but not necessarily in that order</p>
         </div>
       </div>
       <div className="container">
