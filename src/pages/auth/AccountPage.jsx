@@ -50,7 +50,7 @@ export default function AccountPage({ cart, setCart }) {
     return (
       <section className="account-page full-height">
         <div className="container">
-          <img className="user-image" src="/src/assets/user.png" alt="User image" />
+          <img className="user-image" src="assets/user.png" alt="User image" />
           <h2 className="title">{theUser?.displayName ? theUser.displayName : theUser?.email}</h2>
           <button className="sign-out" onClick={() => signOut(auth)}>Sign out</button>
         </div>
