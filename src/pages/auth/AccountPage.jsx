@@ -31,7 +31,7 @@ export default function AccountPage({ cart, setCart }) {
     const BOOKS = Object.keys(cart).filter(book => book !== null)
     let booksPrice = 0
     BOOKS.forEach(bookId => {
-      booksPrice += parseFloat(cart[bookId].price)
+      booksPrice += cart[bookId] !== null ? parseFloat(cart[bookId].price) : 0
     })
     return Math.round(booksPrice)
   }
